@@ -26,15 +26,28 @@ Infer relationships well on unseen data
 Proven very effective in many applications
 
 # Hyperparameters considered
-Number of Layers Number of Neurons Optimizer Activation function Batch Size Learning rate Patience for early stopping
+Number of Layers, Number of Neurons, Optimizer, Activation function, Batch Size, Learning rate, Epochs, Patience for early stopping
 
-Hyperparameters analysis
-#1 (comment) #2 (comment)
 
 # Challenges encountered
 Gradient Vanishing problem Gradient Exploding problem Running time Memory error due to large datasets
 
-# Overall Learnings
-It is very important to use our intuition while training the deep neural networks as it is not practical to use all the possible combinations There are new combinations that have been tried Kernel Initializer Encountered Vanishing Gradient descent Encountered Exploding Gradient descent Importance of Dropout Alternate activation functions The Modelling exercise is all about trying different parameters and understanding the directions  “We learned a lot about what not to do!!”    - Deep Learning thoughts
+# Out of box trials and takeaways
+Given the regression problem, Activation function was removed in last but one layer, but did not impact significantly in performance
+Ensemble of two Neural Networks might be more suitable to produce a robust model when validation set in unknown.
+
+Alternate and random removal of batch normalization  did not impact the model performance significantly
+Alternate activation function were tried but did not produce significant improvement in performance when compared to relu
+
+Different models for different years data – we dropped this since it is not a generic solution
+
+# Overall takeaways
+Number of layers and neurons are the major parameter which produces significant improvement in the model performance
+Swish activation function performed significantly better apart from relu. More epochs might improve the prediction
+After a threshold, it is not necessary that if we increase the number of layers and epochs to very high value it will improve accuracy
+Above all it is very important to use our intuition while training the deep neural networks as it is not practical to use all the possible combinations
+
+“We learned a lot about what not to do!!”    - Deep Learning thoughts
+
 
 Thank You!
